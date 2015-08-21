@@ -8,3 +8,5 @@ meteor-platform
 autopublish
 insecure
 mrt:fullcalendar
+jquery
+gquemart:meteor-reactive-fullcalendar

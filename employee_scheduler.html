@@ -1,27 +1,19 @@
 <head>
-  <link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
-  <script src='lib/jquery-2.1.1.min.js'></script>
-  <script src='lib/moment.min.js'></script>
-  <script src='fullcalendar/fullcalendar.js'></script>
-  <script>
-    $(document).ready(function() {
-      // page is now ready, initialize the calendar...
-      $('#calendar').fullCalendar({
-          // put your options and callbacks here
-      })
-    });
-  </script>
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+  <script src='js/employee_scheduler.js'></script>
   <title>employee_scheduler</title>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-  <div id='calendar'></div>
-
-  {{> hello}}
+  <h1>Employee Scheduler</h1>
+  {{ > newcalendar}}
 </body>
 
 <template name="hello">
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<template name="newcalendar">
+  {{ > ReactiveFullcalendar options=calendarOptions }}
 </template>
